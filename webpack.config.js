@@ -11,14 +11,13 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: './src/index.html',
+    template: './src/index.html',
     }),
   ],
   output: {
     filename: '[name].bundle.js',
     path: path.resolve(__dirname, 'dist'),
     clean: true,
-    assetModuleFilename: '[name][ext]',
   },
   optimization: {
     runtimeChunk: 'single',
@@ -26,23 +25,16 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.s[ac]ss$/i,
-        use: [
-          // Creates `style` nodes from JS strings
-          "style-loader",
-          // Translates CSS into CommonJS
-          "css-loader",
-          // Compiles Sass to CSS
-          "sass-loader",
-        ],
+        test: /\.css$/i,
+        use: ['style-loader', 'css-loader'], // for css
       },
       {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
-        type: 'asset/resource',
+        type: 'asset/resource', // for images
       },
       {
         test: /\.(woff|woff2|eot|ttf|otf)$/i,
-        type: 'asset/resource',
+        type: 'asset/resource', // for fonts
       },
     ],
   },
