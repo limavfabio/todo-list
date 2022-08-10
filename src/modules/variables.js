@@ -1,0 +1,1 @@
+export const tasksContainer = document.getElementById('tasks-container');
