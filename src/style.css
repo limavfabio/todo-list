@@ -20,35 +20,23 @@ body {
   margin: 150px auto;
   max-width: 600px;
 }
-
-#todo-card > input {
-  border: none;
-  padding: 12px 0 12px 24px;
-  background-color: #fefae0;
-  width: 96%;
-}
-
 #todo-card h2 {
   margin: 0;
   border-bottom: 1px solid #b9d29d;
   padding: 15px 20px;
 }
-
 #todo-card .task-item {
   padding: 10px 20px;
   display: flex;
   border-top: solid 1px #b9d29d;
 }
-
 #todo-card .task-item > input {
   margin-right: 15px;
 }
-
-#todo-card .trash-icon {
+#todo-card .task-item .trash-icon {
   margin: auto 20px auto auto;
 }
-
-#todo-card button {
+#todo-card .clear-all-btn {
   align-self: center;
   border: none;
   border-top: #b9d29d solid 1px;
@@ -57,3 +45,22 @@ body {
   padding: 12px;
   cursor: pointer;
 }
+
+.add-task-container {
+  display: flex;
+}
+.add-task-container #add-task-input {
+  border: none;
+  padding: 12px 0 12px 24px;
+  background-color: #fefae0;
+  width: 96%;
+}
+.add-task-container #add-task-btn {
+  border: none;
+  background-color: #fefae0;
+  padding: 12px;
+  margin-right: 24px;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=style.css.map */

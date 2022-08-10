@@ -20,13 +20,6 @@ body {
   margin: 150px auto;
   max-width: 600px;
 
-  > input {
-    border: none;
-    padding: 12px 0 12px 24px;
-    background-color: #fefae0;
-    width: 96%;
-  }
-
   h2 {
     margin: 0;
     border-bottom: 1px solid #b9d29d;
@@ -41,19 +34,35 @@ body {
     > input {
       margin-right: 15px;
     }
+    .trash-icon {
+      margin: auto 20px auto auto;
+    }
   }
 
-  .trash-icon {
-    margin: auto 20px auto auto;
-  }
-
-  button {
+  .clear-all-btn {
     align-self: center;
     border: none;
     border-top: #b9d29d solid 1px;
     width: 100%;
     background-color: #fefae0;
     padding: 12px;
+    cursor: pointer;
+  }
+}
+
+.add-task-container {
+    display: flex;
+  #add-task-input {
+    border: none;
+    padding: 12px 0 12px 24px;
+    background-color: #fefae0;
+    width: 96%;
+  }
+  #add-task-btn {
+    border: none;
+    background-color: #fefae0;
+    padding: 12px;
+    margin-right: 24px;
     cursor: pointer;
   }
 }

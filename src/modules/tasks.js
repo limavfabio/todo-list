@@ -3,23 +3,28 @@ let tasks = [];
 // eslint-disable-next-line no-unused-vars
 export default tasks = [
   {
-    id: 0,
-    text: 'Do something',
-    completed: false,
-  },
-  {
     id: 1,
-    text: 'Do another thing',
+    text: '1',
     completed: false,
   },
   {
     id: 2,
-    text: 'Do some other thing',
-    completed: true,
+    text: '2',
+    completed: false,
   },
   {
     id: 3,
-    text: 'And another thing',
+    text: '3',
     completed: true,
   },
+  {
+    id: 4,
+    text: '4',
+    completed: true,
+  },
+  {
+    id: 5,
+    text: '5',
+    completed: false,
+  }
 ];
