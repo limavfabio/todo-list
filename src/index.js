@@ -1,5 +1,5 @@
 import _ from 'lodash'; // eslint-disable-line
-import './style.css';
+import './style.scss';
 import TaskGenerate from './modules/TaskGenerate.js';
 import tasks from './modules/tasks.js';
 
