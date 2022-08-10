@@ -2,7 +2,6 @@ import tasks from './tasks.js';
 import trashIconPng from '../assets/trash-icon.png';
 import * as vars from './variables.js';
 
-
 export default class TaskGenerate {
   constructor(text) {
     this.text = text;
@@ -38,7 +37,4 @@ export default class TaskGenerate {
       tasks[i].id = i + 1;
     }
   }
-
-
-
 }
