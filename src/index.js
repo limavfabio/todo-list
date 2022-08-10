@@ -1,14 +1,8 @@
-import _ from 'lodash';
+import _ from 'lodash'; // eslint-disable-line
 import './style.css';
+import TaskGenerate from './modules/TaskGenerate.js';
+import tasks from './modules/tasks.js';
 
-function component() {
-    const element = document.createElement('div');
-
-    // Lodash, now imported by this script
-    element.innerHTML = _.join(['Hello', 'webpack'], ' ');
-    element.classList.add('hello');
-
-    return element;
+for (let i = 0; i < tasks.length; i += 1) {
+  TaskGenerate.renderTask(i);
 }
-
-document.body.appendChild(component());
