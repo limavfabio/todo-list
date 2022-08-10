@@ -20,28 +20,34 @@ body {
   margin: 150px auto;
   max-width: 600px;
 }
+
 #todo-card > input {
   border: none;
   padding: 12px 0 12px 24px;
   background-color: #fefae0;
   width: 96%;
 }
+
 #todo-card h2 {
   margin: 0;
   border-bottom: solid 1px #b9d29d;
   padding: 15px 20px;
 }
+
 #todo-card .task-item {
   padding: 10px 20px;
   display: flex;
   border-top: solid 1px #b9d29d;
 }
+
 #todo-card .task-item > input {
   margin-right: 15px;
 }
+
 #todo-card .trash-icon {
   margin: auto 20px auto auto;
 }
+
 #todo-card button {
   align-self: center;
   border: none;
@@ -51,5 +57,3 @@ body {
   padding: 12px;
   cursor: pointer;
 }
-
-/*# sourceMappingURL=style.css.map */

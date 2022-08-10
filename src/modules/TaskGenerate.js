@@ -1,4 +1,4 @@
-import tasks from './tasks';
+import tasks from './tasks.js';
 import trashIconPng from '../assets/trash-icon.png';
 
 export default class TaskGenerate {

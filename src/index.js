@@ -1,11 +1,8 @@
-import _ from 'lodash';
+import _ from 'lodash'; // eslint-disable-line
 import './style.css';
-import TaskGenerate from './modules/TaskGenerate';  
-import tasks from './modules/tasks';
+import TaskGenerate from './modules/TaskGenerate.js';
+import tasks from './modules/tasks.js';
 
-
-
-for (let i = 0; i < tasks.length; i++) {
+for (let i = 0; i < tasks.length; i + 1) {
   TaskGenerate.renderTask(i);
 }
-
