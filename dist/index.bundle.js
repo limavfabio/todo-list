@@ -6,7 +6,7 @@
  * or disable the default devtool with "devtool: false".
  * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
  */
-(self["webpackChunkwebpack5_basis"] = self["webpackChunkwebpack5_basis"] || []).push([["main"],{
+(self["webpackChunkwebpack5_basis"] = self["webpackChunkwebpack5_basis"] || []).push([["index"],{
 
 /***/ "./node_modules/css-loader/dist/cjs.js!./src/style.css":
 /*!*************************************************************!*\
@@ -15,7 +15,7 @@
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/noSourceMaps.js */ \"./node_modules/css-loader/dist/runtime/noSourceMaps.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);\n// Imports\n\n\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, \".hello {\\n    color: red;\\n}\\n\\nbody {\\n    background-color: #f5f5f5;\\n}\", \"\"]);\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack://webpack5-basis/./src/style.css?./node_modules/css-loader/dist/cjs.js");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/noSourceMaps.js */ \"./node_modules/css-loader/dist/runtime/noSourceMaps.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);\n// Imports\n\n\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, \"* {\\n  list-style: none;\\n}\\n\\nul {\\n  margin: 0;\\n  padding: 0;\\n}\\n\\nbody {\\n  background-color: #e4e2c7;\\n}\\n\\n#todo-card {\\n  display: flex;\\n  flex-direction: column;\\n  background-color: #fefae0;\\n  border-radius: 2px;\\n  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);\\n  margin: 150px auto;\\n  max-width: 600px;\\n}\\n#todo-card > input {\\n  border: none;\\n  padding: 12px 0 12px 24px;\\n  background-color: #fefae0;\\n  width: 96%;\\n}\\n#todo-card h2 {\\n  margin: 0;\\n  border-bottom: solid 1px #b9d29d;\\n  padding: 15px 20px;\\n}\\n#todo-card .task-item {\\n  padding: 10px 20px;\\n  display: flex;\\n  border-top: solid 1px #b9d29d;\\n}\\n#todo-card .task-item > input {\\n  margin-right: 15px;\\n}\\n#todo-card .task-menu-icon {\\n  margin: auto 20px auto auto;\\n}\\n#todo-card button {\\n  align-self: center;\\n  border: none;\\n  border-top: #b9d29d solid 1px;\\n  width: 100%;\\n  background-color: #fefae0;\\n  padding: 12px;\\n  cursor: pointer;\\n}\\n\", \"\"]);\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack://webpack5-basis/./src/style.css?./node_modules/css-loader/dist/cjs.js");
 
 /***/ }),
 
@@ -135,7 +135,40 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lodash */ \"./node_modules/lodash/lodash.js\");\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n\n\n\nfunction component() {\n    const element = document.createElement('div');\n\n    // Lodash, now imported by this script\n    element.innerHTML = lodash__WEBPACK_IMPORTED_MODULE_0___default().join(['Hello', 'webpack'], ' ');\n    element.classList.add('hello');\n\n    return element;\n}\n\ndocument.body.appendChild(component());\n\n//# sourceURL=webpack://webpack5-basis/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lodash */ \"./node_modules/lodash/lodash.js\");\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n/* harmony import */ var _modules_TaskGenerate__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/TaskGenerate */ \"./src/modules/TaskGenerate.js\");\n/* harmony import */ var _modules_tasks__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/tasks */ \"./src/modules/tasks.js\");\n\n\n  \n\n\n\n\nfor (let i = 0; i < _modules_tasks__WEBPACK_IMPORTED_MODULE_3__[\"default\"].length; i++) {\n  _modules_TaskGenerate__WEBPACK_IMPORTED_MODULE_2__[\"default\"].renderTask(i);\n}\n\n\n\n//# sourceURL=webpack://webpack5-basis/./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/modules/TaskGenerate.js":
+/*!*************************************!*\
+  !*** ./src/modules/TaskGenerate.js ***!
+  \*************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ TaskGenerate)\n/* harmony export */ });\n/* harmony import */ var _tasks__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./tasks */ \"./src/modules/tasks.js\");\n/* harmony import */ var _assets_trash_icon_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../assets/trash-icon.png */ \"./src/assets/trash-icon.png\");\n\n\n\nclass TaskGenerate {\n  constructor(taskName, taskIndex) {\n    this.taskName = taskName;\n    this.taskIndex = taskIndex;\n  }\n\n  static renderTask(taskIndex) {\n    const tasksContainer = document.getElementById('tasks-container');\n    const trashIcon = new Image();\n    trashIcon.src = _assets_trash_icon_png__WEBPACK_IMPORTED_MODULE_1__;\n    tasksContainer.innerHTML += `<li class=\"task-item\">\n          <input type=\"checkbox\">\n          ${_tasks__WEBPACK_IMPORTED_MODULE_0__[\"default\"][taskIndex].text}\n          <span class=\"task-menu-icon\">*icon</span>\n      </li>`;\n  }\n  \n}\n\n\n//# sourceURL=webpack://webpack5-basis/./src/modules/TaskGenerate.js?");
+
+/***/ }),
+
+/***/ "./src/modules/tasks.js":
+/*!******************************!*\
+  !*** ./src/modules/tasks.js ***!
+  \******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nlet tasks = [];\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (tasks = [\n    {\n      id: 0,\n      text: 'Do something',\n      completed: false,\n    },\n    {\n      id: 1,\n      text: 'Do another thing',\n      completed: false,\n    },\n    {\n      id: 2,\n      text: 'Do some other thing',\n      completed: true,\n    },\n    {\n      id: 3,\n      text: 'And another thing',\n      completed: true,\n    },\n  ]);\n\n//# sourceURL=webpack://webpack5-basis/./src/modules/tasks.js?");
+
+/***/ }),
+
+/***/ "./src/assets/trash-icon.png":
+/*!***********************************!*\
+  !*** ./src/assets/trash-icon.png ***!
+  \***********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"trash-icon.png\";\n\n//# sourceURL=webpack://webpack5-basis/./src/assets/trash-icon.png?");
 
 /***/ })
 
