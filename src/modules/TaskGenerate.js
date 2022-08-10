@@ -1,5 +1,7 @@
 import tasks from './tasks.js';
 import trashIconPng from '../assets/trash-icon.png';
+import * as vars from './variables.js';
+
 
 export default class TaskGenerate {
   constructor(text) {
@@ -15,18 +17,16 @@ export default class TaskGenerate {
   }
 
   static reloadTasks() {
-    const tasksContainer = document.getElementById('tasks-container');
-    tasksContainer.innerHTML = '';
+    vars.tasksContainer.innerHTML = '';
     for (let i = 0; i < tasks.length; i += 1) {
       TaskGenerate.renderTask(i);
     }
   }
 
   static renderTask(taskIndex) {
-    const tasksContainer = document.getElementById('tasks-container');
     const trashIcon = new Image();
     trashIcon.src = trashIconPng;
-    tasksContainer.innerHTML += `<li class="task-item">
+    vars.tasksContainer.innerHTML += `<li class="task-item">
         <input type="checkbox">
         <span class="task-text">${tasks[taskIndex].text}</span>
         <img src="${trashIcon.src}" class="trash-icon">
