@@ -20,6 +20,12 @@ export default class TaskGenerate {
     for (let i = 0; i < tasks.length; i += 1) {
       TaskGenerate.renderTask(i);
     }
+    for (let i = 0; i < tasks.length; i += 1) {
+      if (tasks[i].completed) {
+        vars.tasksContainer.children[i].children[0].checked = true;
+        vars.tasksContainer.children[i].children[1].style.textDecoration = 'line-through';
+      }
+    }
   }
 
   static renderTask(taskIndex) {
