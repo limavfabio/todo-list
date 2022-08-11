@@ -48,7 +48,7 @@ body {
   margin: auto 20px auto 20px;
 }
 
-#todo-card .clear-all-btn {
+#todo-card #clear-all-btn {
   align-self: center;
   border: none;
   border-top: #b9d29d solid 1px;
