@@ -10,5 +10,6 @@ export default vars.tasksContainer.addEventListener('click', (event) => {
         tasks.splice(taskIndex, 1);
         TaskGenerate.reloadTasks();
         TaskGenerate.resetTasksId();
+        TaskGenerate.refreshLocalStorage();
     }
 });

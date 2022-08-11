@@ -37,4 +37,9 @@ export default class TaskGenerate {
       tasks[i].id = i + 1;
     }
   }
+
+  static refreshLocalStorage() {
+    localStorage.setItem('tasks', JSON.stringify(tasks));
+  }
+
 }
