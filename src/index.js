@@ -6,6 +6,7 @@ import add from './modules/add.js'; // eslint-disable-line
 import tasks from './modules/tasks.js';
 import editTask from './modules/editTask.js'; // eslint-disable-line
 import * as vars from './modules/variables.js'; // eslint-disable-line
+import completed from './modules/completed.js'; // eslint-disable-line
 
 // If local storage = true, then push tasks to tasks array
 if (localStorage.getItem('tasks')) {
@@ -21,22 +22,15 @@ for (let i = 0; i < tasks.length; i += 1) {
   }
 }
 
-// If checked, then set completed to true
-document.addEventListener('input', (event) => {
-  const { target } = event;
-  if (target.classList.contains('checkbox')) {
-    const taskItem = target.parentElement;
-    const taskIndex = Array.prototype.indexOf.call(
-      document.getElementById('tasks-container').children,
-      taskItem,
-    );
-    tasks[taskIndex].completed = target.checked;
-    // If checked, strike through the text
-    if (target.checked) {
-      target.parentElement.querySelector('.task-text').style.textDecoration = 'line-through';
-    } else {
-      target.parentElement.querySelector('.task-text').style.textDecoration = 'none';
+// when click on clearAllBtn, then remove all completed tasks
+vars.clearAllBtn.addEventListener('click', () => {
+  for (let i = 0; i < tasks.length; i += 1) {
+    if (tasks[i].completed) {
+      tasks.splice(i, 1);
+      i -= 1;
     }
-    TaskGenerate.refreshLocalStorage();
   }
+  TaskGenerate.reloadTasks();
+  TaskGenerate.resetTasksId();
+  TaskGenerate.refreshLocalStorage();
 });
