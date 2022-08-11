@@ -26,8 +26,8 @@ export default class TaskGenerate {
     const trashIcon = new Image();
     trashIcon.src = trashIconPng;
     vars.tasksContainer.innerHTML += `<li class="task-item">
-        <input type="checkbox">
-        <span class="task-text">${tasks[taskIndex].text}</span>
+        <input class="checkbox" type="checkbox">
+        <input class="task-text" value="${tasks[taskIndex].text}">
         <img src="${trashIcon.src}" class="trash-icon">
       </li>`;
   }

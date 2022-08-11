@@ -26,15 +26,21 @@ body {
   padding: 15px 20px;
 }
 #todo-card .task-item {
-  padding: 10px 20px;
+  padding: 0 20px;
   display: flex;
   border-top: solid 1px #b9d29d;
 }
-#todo-card .task-item > input {
+#todo-card .task-item .task-text {
+  border: none;
+  padding: 12px 0 12px 24px;
+  background-color: #fefae0;
+  width: 96%;
+}
+#todo-card .task-item .checkbox {
   margin-right: 15px;
 }
 #todo-card .task-item .trash-icon {
-  margin: auto 20px auto auto;
+  margin: auto 20px auto 20px;
 }
 #todo-card .clear-all-btn {
   align-self: center;
