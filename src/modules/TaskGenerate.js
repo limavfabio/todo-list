@@ -47,5 +47,4 @@ export default class TaskGenerate {
   static refreshLocalStorage() {
     localStorage.setItem('tasks', JSON.stringify(tasks));
   }
-
 }
