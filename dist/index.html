@@ -7,15 +7,16 @@
     <title>To-do list</title>
   <script defer src="runtime.bundle.js"></script><script defer src="index.bundle.js"></script></head>
   <body>
-        <div id="todo-card">
-          <h2>Today's Tasks</h2>
-          <input type="text" placeholder="Enter Tasks" />
-          <ul id="tasks-container">
-            <!-- Here will be generated the tasks as list items  -->
-          </ul>
-          <button>
-            Clear all completed
-          </button>
-        </div>
+    <div id="todo-card">
+      <h2>Today's Tasks</h2>
+      <div class="add-task-container">
+        <input type="text" id="add-task-input" placeholder="Enter Tasks" />
+        <button id="add-task-btn">*add</button>
+      </div>
+      <ul id="tasks-container">
+        <!-- Here will be generated the tasks as list items  -->
+      </ul>
+      <button id="clear-all-btn">Clear all completed</button>
+    </div>
   </body>
 </html>
