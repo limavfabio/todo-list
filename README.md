@@ -13,9 +13,9 @@ A quick description of the project
 
 To get a local copy up and running, follow these simple steps:
 
-## Usage
+## Live Demo
 
-Copy this repo and run it on a browser
+https://limavfabio.github.io/todo-list/dist/index.html
 
 # Authors
 
