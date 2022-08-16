@@ -3,9 +3,9 @@ import TaskGenerate from './TaskGenerate.js';
 
 // Add task and add to localStorage
 export default vars.addTaskBtn.addEventListener('click', () => {
-  const text = vars.addTaskInput.value;
-  if (text) {
-    TaskGenerate.addTask(text);
+  const taskInputText = vars.addTaskInput.value;
+  if (taskInputText) {
+    TaskGenerate.addTask(taskInputText);
     TaskGenerate.refreshLocalStorage();
     vars.addTaskInput.value = '';
   }

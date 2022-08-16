@@ -1,6 +1,7 @@
 import * as vars from './variables.js';
 import tasks from './tasks.js';
 import TaskGenerate from './TaskGenerate.js';
+
 // A click listener to remove the task
 export default vars.tasksContainer.addEventListener('click', (event) => {
   const { target } = event;
