@@ -15,8 +15,7 @@ if (localStorage.getItem('tasks')) {
 }
 
 // Add add icon the addTaskBtn
-vars.addTaskBtn.innerHTML = `<i class="fas fa-plus"></i>`;
-
+vars.addTaskBtn.innerHTML = '<i class="fas fa-plus"></i>';
 
 // If a target property completed is true, then set checkbox to checked and text to strike through
 for (let i = 0; i < tasks.length; i += 1) {
